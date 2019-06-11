@@ -1,9 +1,18 @@
 {
     "workflows": [{
             "workflowName": "test",
-            "workflowFilename": "exampleWorkflow.json"
-        }],
+            "workflowFilename": "pcapWorkflow.json",
+            "instances": 4
+        }
+   ],
     "producers": [{
+            "type": "kafka",
+            "broker.server": "10.1.0.8",
+            "broker.port": 9092,
+            "topic": "webtraffic",
+            "flatten": true,
+            "sync": true
+    },{
         "type":"logger"
     }]
 }
