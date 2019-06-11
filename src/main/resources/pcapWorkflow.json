@@ -6,18 +6,18 @@
     "varyRepeatFrequency": true,
     "steps": [{
             "config": [{
-					"time": "nowTimestamp()",
-					"ip_src": "random("170.248.68.7","172.19.208.78","192.168.8.1")",
-					"ip_dst": "random("170.248.68.7","172.19.208.78","192.168.8.1")",
-					"tcp_dstport": "random("430","9090","80","8080")",
-					"tcp_flags_ack": "random("1","0")",
-					"tcp_flags_fin": "random("1","0")",
-					"tcp_flags_push": "random("1","0")",
-					"tcp_flags_res": "random("1","0")",
-					"tcp_flags_reset": "random("1","0")",
-					"tcp_flags_syn": "random("1","0")",
-					"tcp_flags_urg": "random("1","0")",
-					"tcp_stream": "random("1","0")"
+					"timestamp": "nowTimestamp()",
+					"ip_src": "random('170.248.68.7','172.19.208.78','192.168.8.1')",
+					"ip_dst": "random('170.248.68.7','172.19.208.78','192.168.8.1')",
+					"tcp_dstport": "random('430','9090','80','8080')",
+					"tcp_flags_ack": "random('1','0')",
+					"tcp_flags_fin": "random('1','0')",
+					"tcp_flags_push": "random('1','0')",
+					"tcp_flags_res": "random('1','0')",
+					"tcp_flags_reset": "random('1','0')",
+					"tcp_flags_syn": "random('1','0')",
+					"tcp_flags_urg": "random('1','0')",
+					"tcp_stream": "random('1','0')"
                 }],
             "duration": 0
         }]
